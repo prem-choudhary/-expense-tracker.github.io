@@ -9,10 +9,10 @@ const Container = styled.div`
   flex-direction: column;
   width: 600px;
   max-width: 100%;
-  background-color: #fff;
+  background-color: white;
   padding: 30px 20px;
-  border: 1px solid #000;
-  border-radius: 5px;
+  border: 3px solid #000;
+  border-radius: 16px;
   margin: 10px;
 `;
 
@@ -41,8 +41,8 @@ color: #44E610;
 
 const ExpenseBox = styled.div`
   flex: 1;
-  border: 1px solid #000;
-  border-radius: 5px;
+  border: 2px solid #000;
+  border-radius: 7px;
   padding: 10px 20px;
   background-color: #fff;
   & span {
@@ -94,7 +94,7 @@ const Tracker = () => {
 
   return (
     <Container>
-      <THeading>ICICI Bank</THeading>
+      <THeading>Welcome ! 👋</THeading>
       <Heading>Expense Tracker</Heading>
       <OverviewComponent
         toggle={toggle}

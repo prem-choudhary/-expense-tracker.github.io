@@ -4,8 +4,8 @@ const Item = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #e6e8e9;
-  background-color: #fff;
+  border: 3px solid #e6e8e9;
+  background-color: #green;
   border-radius: 5px;
   padding: 10px 20px;
   border-right: 5px solid ${(props) => (props.isExpense ? "red" : "green")};
