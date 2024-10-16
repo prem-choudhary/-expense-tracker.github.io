@@ -1,6 +1,6 @@
 // FileName: TransactionsContainer.js
 
-import  { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 import TransactionItem from "./TransactionItem";
 
@@ -26,7 +26,8 @@ const TransactionItems = styled.div``;
 
 const TransactionsContainer = ({ transactions, removeTransaction }) => {
   const [searchInput, setSearchInput] = useState("");
-  const [filteredTransactions, setFilteredTransactions] = useState(transactions);
+  const [filteredTransactions, setFilteredTransactions] =
+    useState(transactions);
 
   const filteredData = (searchInput) => {
     if (!searchInput || !searchInput.trim().length) {
@@ -35,9 +36,8 @@ const TransactionsContainer = ({ transactions, removeTransaction }) => {
     }
 
     let filtered = [...filteredTransactions];
-    filtered = filtered.filter(
-      (item) =>
-        item.details.toLowerCase().includes(searchInput.toLowerCase().trim())
+    filtered = filtered.filter((item) =>
+      item.details.toLowerCase().includes(searchInput.toLowerCase().trim())
     );
     setFilteredTransactions(filtered);
   };

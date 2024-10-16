@@ -1,5 +1,4 @@
-
-import  { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 import AddTransaction from "./AddTransaction";
 import OverviewComponent from "./OverviewComponent";
@@ -69,8 +68,9 @@ const Tracker = () => {
   };
 
   const removeTransaction = (id) => {
-    const updatedTransactions = transactions
-                                .filter((transaction) => transaction.id !== id);
+    const updatedTransactions = transactions.filter(
+      (transaction) => transaction.id !== id
+    );
     setTransactions(updatedTransactions);
   };
 
@@ -94,7 +94,7 @@ const Tracker = () => {
 
   return (
     <Container>
-        <THeading>ICICI Bank</THeading>
+      <THeading>ICICI Bank</THeading>
       <Heading>Expense Tracker</Heading>
       <OverviewComponent
         toggle={toggle}
