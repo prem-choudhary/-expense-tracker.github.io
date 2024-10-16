@@ -94,7 +94,7 @@ const Tracker = () => {
 
   return (
     <Container>
-        <THeading>GeeksforGeeks</THeading>
+        <THeading>ICICI Bank</THeading>
       <Heading>Expense Tracker</Heading>
       <OverviewComponent
         toggle={toggle}

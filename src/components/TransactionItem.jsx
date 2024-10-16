@@ -1,6 +1,4 @@
-// FileName: TransactionItem.js
 
-// import React from "react";
 import styled from "styled-components";
 
 const Item = styled.div`
@@ -18,7 +16,7 @@ const Item = styled.div`
 
 const RemoveButton = styled.button`
   background-color: #44E610;
-  color: white;
+  color: black;
   border: none;
   padding: 5px 10px;
   border-radius: 3px;

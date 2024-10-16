@@ -17,7 +17,7 @@ const SearchInput = styled.input`
   outline: none;
   border-radius: 5px;
   margin: 5px 0;
-  border: 1px solid #e6e8e9;
+  border: 3px solid #e6e8e9;
   background-color: #e6e8e9;
   margin-bottom: 25px;
 `;
